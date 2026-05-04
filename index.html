@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshBite Café | Lucknow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <h1 class="brand">FreshBite</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="overlay">
+    <h2>Welcome to FreshBite Café</h2>
+    <p>Fresh • Tasty • Affordable</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+    <a href="https://wa.me/919999999999" class="btn order-btn">Order Now</a>
+  </div>
+</section>
+
+<!-- Menu -->
+<section id="menu" class="section">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+
+    <!-- Coffee -->
+    <div class="card"><h3>Cold Coffee</h3><p>₹120</p></div>
+    <div class="card"><h3>Cappuccino</h3><p>₹110</p></div>
+    <div class="card"><h3>Latte</h3><p>₹130</p></div>
+
+    <!-- Snacks -->
+    <div class="card"><h3>Veg Sandwich</h3><p>₹80</p></div>
+    <div class="card"><h3>Grilled Sandwich</h3><p>₹100</p></div>
+    <div class="card"><h3>French Fries</h3><p>₹90</p></div>
+
+    <!-- Main -->
+    <div class="card"><h3>Pasta</h3><p>₹150</p></div>
+    <div class="card"><h3>Pizza Slice</h3><p>₹100</p></div>
+    <div class="card"><h3>Burger</h3><p>₹120</p></div>
+
+    <!-- Drinks -->
+    <div class="card"><h3>Mojito</h3><p>₹90</p></div>
+    <div class="card"><h3>Fresh Juice</h3><p>₹100</p></div>
+    <div class="card"><h3>Milkshake</h3><p>₹140</p></div>
+
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="section dark">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8">
+    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    FreshBite Café in Lucknow is a cozy place for students, friends, and families.
+    We serve fresh snacks, beverages, and meals at affordable prices with a modern café vibe.
+  </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section dark">
+  <h2>Contact Us</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Map -->
+  <div class="map">
+    <iframe 
+      src="https://maps.google.com/maps?q=Lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 FreshBite Café, Lucknow</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
